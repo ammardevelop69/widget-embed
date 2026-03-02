@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kogents Chat Widget</title>
+</head>
+<body>
+  <h1>Page with Kogents Chat Widget</h1>
+  <p>The chat widget should load in the corner. Configure or open it via the widget UI.</p>
+
+  <!-- Begin Kogents Chat Widget -->
+  <script type="text/javascript">
+    window.KogentsChat ||
+      (function (d, s, id) {
+        var w = (window.KogentsChat = function (c) {
+          w.queue.push(c);
+        });
+        w.queue = [];
+        var e = d.createElement(s);
+        e.async = true;
+        e.id = id;
+        e.src = "https://api-staging.kogents.com/widget/embed.js?key=3aae201b-8816-4df2-9cac-3c0734afbd0d&chatbotId=4f63e479-29cd-493b-8af9-659272f40b21";
+        var t = d.getElementsByTagName(s)[0];
+        t.parentNode.insertBefore(e, t);
+      })(document, "script", "kogents-chat-widget");
+  </script>
+  <!-- End Kogents Chat Widget -->
+</body>
+</html>
