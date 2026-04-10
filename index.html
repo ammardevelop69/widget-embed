@@ -11,23 +11,23 @@
   <h1>Page with Kogents Chat Widget</h1>
   <p>The chat widget should load in the corner. Configure or open it via the widget UI.</p>
 
-  <!-- Begin DesignCater Chat Widget -->
+  <!-- Begin Kogents Chat Widget -->
   <script type="text/javascript">
-    window.DesignCaterChat ||
+    window.KogentsChat ||
       (function (d, s, id) {
-        var w = (window.DesignCaterChat = function (c) {
-          w..push(c);
+        var w = (window.KogentsChat = function (c) {
+          w._.push(c);
         });
-        w. = [];
+        w._ = [];
         var e = d.createElement(s);
         e.async = true;
         e.id = id;
-        e.src = "https://api.designcater.com/widget/embed.js?key=41431f89-6a12-4a79-86d8-edd8dae328a5&chatbotId=31ad814c-3443-4bea-9714-8ee884c6fec2";
+        e.src = "https://api-staging.kogents.com/widget/embed.js?key=a9a4067c-ff6d-44b3-8418-0810b0e8f1b2";
         var t = d.getElementsByTagName(s)[0];
         t.parentNode.insertBefore(e, t);
-      })(document, "script", "designcater-chat-widget");
+      })(document, "script", "kogents-chat-widget");
   </script>
-  <!-- End DesignCater Chat Widget -->
+  <!-- End Kogents Chat Widget -->
 </body>
 
 </html>
